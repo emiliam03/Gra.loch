@@ -27,7 +27,6 @@ def show_stats(player: dict) -> None:
 
 def show_equipment(player: dict) -> None:
     """Wyświetla ekwipunek gracza"""
-
     print("\nTwój ekwipunek:")
     if player["ekwipunek"]:
         for element in player["ekwipunek"]:
