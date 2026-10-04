@@ -4,9 +4,9 @@ from prints import (
     menu_loch
 )
 
-from waitress import (wait_for_continue)
+from waitress import wait_for_continue
 
-from funkcje_walki import (attack)
+from funkcje_walki import attack
 
 
 def player_creator() -> dict:
