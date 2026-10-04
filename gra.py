@@ -111,6 +111,7 @@ def opp_initiation() -> list[dict]:
     return [smoczatko, goblin, cyklop]
 
 
+
 def wait_for_continue() -> None:
     """Czeka, aż gracz naciśnie C"""
 
