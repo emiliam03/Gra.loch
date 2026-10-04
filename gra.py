@@ -1,10 +1,12 @@
 from prints import (
     show_stats,
     show_equipment,
-    show_opponents,
-    menu_loch,
-    during_fight,
+    menu_loch
 )
+
+from waitress import (wait_for_continue)
+
+from funkcje_walki import (attack)
 
 
 def player_creator() -> dict:
@@ -36,18 +38,7 @@ def opp_initiation() -> list[dict]:
     cyklop = opp_creator("Polifem", 100, 25, 100, "miecz")
     return [smoczatko, goblin, cyklop]
 
-def wait_for_continue() -> None:
-    """Czeka, aż gracz naciśnie C"""
 
-    while True:
-        answer = input("press C to continue: ")
-
-        if answer.lower() == "c":
-            break
-
-        else:
-            print("Nieprawidłowa opcja")
-            continue
 
 
 def main():
