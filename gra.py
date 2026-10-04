@@ -110,7 +110,6 @@ def opp_initiation() -> list[dict]:
     cyklop = opp_creator("Polifem", 100, 25, 100, "miecz")
     return [smoczatko, goblin, cyklop]
 
-
 def wait_for_continue() -> None:
     """Czeka, aż gracz naciśnie C"""
 
@@ -123,7 +122,6 @@ def wait_for_continue() -> None:
         else:
             print("Nieprawidłowa opcja")
             continue
-
 
 def opponent_choice(opponents: list[dict]) -> dict:
     """"""
