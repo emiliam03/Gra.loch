@@ -8,7 +8,6 @@ from waitress import wait_for_continue
 
 from funkcje_walki import attack
 
-
 def player_creator() -> dict:
     return {
     "imie" : "Lucjusz" ,
@@ -17,7 +16,6 @@ def player_creator() -> dict:
     "zloto" : 20 ,
     "ekwipunek" : ["różdżka", "mikstura"]
 }
-
 
 def opp_creator(name: str, hp: int, att: int, reward: int, bonusrew: str) -> dict:
     """Tworzy strukturę słownika, który przechowuje charakterystyki przeciwnika """
@@ -37,8 +35,6 @@ def opp_initiation() -> list[dict]:
     goblin = opp_creator("Goblyn", 20, 10, 30, "mikstura")
     cyklop = opp_creator("Polifem", 100, 25, 100, "miecz")
     return [smoczatko, goblin, cyklop]
-
-
 
 
 def main():
